@@ -1,0 +1,260 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Categories Component matches snapshot 1`] = `
+<RCTScrollView
+  contentContainerStyle={
+    {
+      "flex": 1,
+      "marginVertical": 10,
+    }
+  }
+  data={
+    [
+      {
+        "createdAt": "2023-01-11T10:53:05.801Z",
+        "id": 11,
+        "image": {
+          "alternativeText": null,
+          "caption": null,
+          "createdAt": "2023-01-11T10:44:46.151Z",
+          "ext": ".png",
+          "formats": null,
+          "hash": "6_edbcc6988a",
+          "height": 126,
+          "id": 23,
+          "mime": "image/png",
+          "name": "6.png",
+          "previewUrl": null,
+          "provider": "@strapi-community/strapi-provider-upload-google-cloud-storage",
+          "provider_metadata": null,
+          "size": 8.24,
+          "updatedAt": "2023-01-11T10:44:46.151Z",
+          "url": "https://cms-cdn.plantapp.app/6_edbcc6988a/6_edbcc6988a.png",
+          "width": 116,
+        },
+        "name": "fern",
+        "publishedAt": "2023-01-11T10:53:07.416Z",
+        "rank": 0,
+        "title": "Ferns",
+        "updatedAt": "2023-01-11T10:54:30.059Z",
+      },
+      {
+        "createdAt": "2023-01-11T10:52:28.521Z",
+        "id": 10,
+        "image": {
+          "alternativeText": null,
+          "caption": null,
+          "createdAt": "2023-01-11T10:50:17.828Z",
+          "ext": ".png",
+          "formats": null,
+          "hash": "5_d2384a3938",
+          "height": 152,
+          "id": 25,
+          "mime": "image/png",
+          "name": "5.png",
+          "previewUrl": null,
+          "provider": "@strapi-community/strapi-provider-upload-google-cloud-storage",
+          "provider_metadata": null,
+          "size": 10.01,
+          "updatedAt": "2023-01-11T10:51:05.935Z",
+          "url": "https://cms-cdn.plantapp.app/5_d2384a3938/5_d2384a3938.png",
+          "width": 158,
+        },
+        "name": "cacti-and-succulent",
+        "publishedAt": "2023-01-11T10:52:36.428Z",
+        "rank": 1,
+        "title": "Cacti and Succulents",
+        "updatedAt": "2023-01-11T10:54:39.391Z",
+      },
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  keyExtractor={[Function]}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={false}
+  renderItem={[Function]}
+  scrollEnabled={false}
+  scrollEventThrottle={0.0001}
+  showsHorizontalScrollIndicator={false}
+  stickyHeaderIndices={[]}
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      onFocusCapture={[Function]}
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          {
+            "flexDirection": "row",
+          }
+        }
+      >
+        <View
+          style={
+            [
+              {
+                "marginLeft": 0,
+              },
+              {
+                "flex": 1,
+                "marginBottom": 15,
+              },
+            ]
+          }
+        >
+          <View
+            accessibilityIgnoresInvertColors={true}
+            style={
+              {
+                "aspectRatio": 2.2697368421052633,
+                "width": 345,
+              }
+            }
+          >
+            <Image
+              source={
+                {
+                  "uri": "https://cms-cdn.plantapp.app/6_edbcc6988a/6_edbcc6988a.png",
+                }
+              }
+              style={
+                [
+                  {
+                    "bottom": 0,
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                  },
+                  {
+                    "height": undefined,
+                    "width": 345,
+                  },
+                  {
+                    "borderColor": "#29BB892E",
+                    "borderRadius": 12,
+                    "borderWidth": 0.5,
+                  },
+                ]
+              }
+              testID="category-image"
+            />
+            <View
+              style={
+                {
+                  "padding": 14,
+                }
+              }
+            >
+              <Text
+                style={
+                  [
+                    {
+                      "fontFamily": "Rubik-Medium",
+                    },
+                    {
+                      "color": "#13231B",
+                      "fontSize": 16,
+                      "lineHeight": 21,
+                    },
+                  ]
+                }
+                testID="category-title"
+              >
+                Ferns
+              </Text>
+            </View>
+          </View>
+        </View>
+        <View
+          style={
+            [
+              {
+                "marginLeft": 15,
+              },
+              {
+                "flex": 1,
+                "marginBottom": 15,
+              },
+            ]
+          }
+        >
+          <View
+            accessibilityIgnoresInvertColors={true}
+            style={
+              {
+                "aspectRatio": 2.2697368421052633,
+                "width": 345,
+              }
+            }
+          >
+            <Image
+              source={
+                {
+                  "uri": "https://cms-cdn.plantapp.app/5_d2384a3938/5_d2384a3938.png",
+                }
+              }
+              style={
+                [
+                  {
+                    "bottom": 0,
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                  },
+                  {
+                    "height": undefined,
+                    "width": 345,
+                  },
+                  {
+                    "borderColor": "#29BB892E",
+                    "borderRadius": 12,
+                    "borderWidth": 0.5,
+                  },
+                ]
+              }
+              testID="category-image"
+            />
+            <View
+              style={
+                {
+                  "padding": 14,
+                }
+              }
+            >
+              <Text
+                style={
+                  [
+                    {
+                      "fontFamily": "Rubik-Medium",
+                    },
+                    {
+                      "color": "#13231B",
+                      "fontSize": 16,
+                      "lineHeight": 21,
+                    },
+                  ]
+                }
+                testID="category-title"
+              >
+                Cacti and Succulents
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;

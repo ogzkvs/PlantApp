@@ -22,6 +22,7 @@ const Categories: React.FC<CategoriesProps> = ({ data }) => {
         style={[{ marginLeft: index % 2 !== 0 ? 15 : 0 }, styles.itemContainer]}
       >
         <ImageBackground
+          testID="category-image"
           source={{ uri: item?.image?.url }}
           style={styles.image}
           imageStyle={{
@@ -31,7 +32,11 @@ const Categories: React.FC<CategoriesProps> = ({ data }) => {
           }}
         >
           <View style={styles.textContainer}>
-            <CustomText fontFamily="Rubik-Medium" style={styles.title}>
+            <CustomText
+              testID="category-title"
+              fontFamily="Rubik-Medium"
+              style={styles.title}
+            >
               {item?.title}
             </CustomText>
           </View>
