@@ -3,7 +3,7 @@ import { View, TouchableOpacity, Image } from 'react-native';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { RootStackParamList } from '../../../navigation/Stacks/main';
 import styles from '../styles/getStarted';
-import CustomText from '../../../components/customText';
+import CustomText from '../../../components/customText/customText';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'GetStarted'>;
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, FlatList } from 'react-native';
 import { ImageBackground } from 'react-native';
-import CustomText from '../customText';
+import CustomText from '../customText/customText';
 import { CategoryType } from '../../types/categories';
 import styles from './styles/categories';
 

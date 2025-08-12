@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Image } from 'react-native';
 import styles from '../styles/components/premiumBanner';
 import Icon from '../../../components/icons';
-import CustomText from '../../../components/customText';
+import CustomText from '../../../components/customText/customText';
 
 const PremiumBanner: React.FC = () => {
   return (

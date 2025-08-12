@@ -1,7 +1,7 @@
 import React from 'react';
 import { View } from 'react-native';
 import styles from '../styles/components/welcomeBanner';
-import CustomText from '../../../components/customText';
+import CustomText from '../../../components/customText/customText';
 
 const WelcomeBanner: React.FC = () => {
   return (

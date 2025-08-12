@@ -9,7 +9,7 @@ import {
 
 import styles from '../styles/paywall';
 import Icon from '../../../components/icons';
-import CustomText from '../../../components/customText';
+import CustomText from '../../../components/customText/customText';
 
 const features = [
   {

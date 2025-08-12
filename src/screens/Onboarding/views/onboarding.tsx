@@ -12,7 +12,7 @@ import { RootStackParamList } from '../../../navigation/Stacks/main';
 import { useAppDispatch } from '../../../store/hooks';
 import { setPageStatusToMain } from '../../../store/slices/settingsSlice';
 import styles from '../styles/onboarding';
-import CustomText from '../../../components/customText';
+import CustomText from '../../../components/customText/customText';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Onboarding'> & {};
 

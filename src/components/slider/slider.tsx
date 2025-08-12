@@ -1,7 +1,7 @@
 import { View, FlatList, TouchableOpacity, Linking } from 'react-native';
 import { ImageBackground } from 'react-native';
 import styles from './styles/slider';
-import CustomText from '../../components/customText';
+import CustomText from '../customText/customText';
 
 interface SliderItem {
   id: number;
