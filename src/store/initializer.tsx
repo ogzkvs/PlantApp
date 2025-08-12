@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useAppDispatch } from './hooks';
 import { initializeSettings } from './slices/settingsSlice';
-import { View, ActivityIndicator } from 'react-native';
 import { fetchQuestions } from './slices/questionsSlice';
 import { fetchCategories } from './slices/categoriesSlice';
+import Loading from '../components/loading/loading';
 
 type Props = {
   children: React.ReactNode;
@@ -26,12 +26,7 @@ const AppInitializer: React.FC<Props> = ({ children }) => {
   }, [dispatch]);
 
   if (!initialized) {
-    // TODO: loading ekranını componente çek
-    return (
-      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-        <ActivityIndicator size="large" />
-      </View>
-    );
+    return <Loading />;
   }
 
   return <>{children}</>;

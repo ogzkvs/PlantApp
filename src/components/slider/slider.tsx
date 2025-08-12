@@ -31,7 +31,6 @@ const Slider = (props: SliderProps) => {
       </ImageBackground>
     );
 
-    // Eğer uri varsa tıklanabilir yap
     return item.uri ? (
       <TouchableOpacity
         activeOpacity={0.7}

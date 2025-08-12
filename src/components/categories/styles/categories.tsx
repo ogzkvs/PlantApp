@@ -8,7 +8,8 @@ import {
 
 const { width } = Dimensions.get('window');
 
-const imageWidth = width / 2 - 40;
+const padding = 30;
+const imageWidth = width / 2 - padding;
 const imageHeight = 152;
 const aspectRatio = imageWidth / imageHeight;
 
@@ -18,12 +19,16 @@ interface Styles {
   title: TextStyle;
   textContainer: ViewStyle;
   listContent: ViewStyle;
-  header: TextStyle;
+  itemContainer: ViewStyle;
 }
 
 export default StyleSheet.create<Styles>({
   container: {
     flex: 1,
+  },
+  itemContainer: {
+    flex: 1,
+    marginBottom: 15,
   },
   image: {
     width: imageWidth,
@@ -35,17 +40,10 @@ export default StyleSheet.create<Styles>({
   title: {
     color: '#13231B',
     fontSize: 16,
-    fontWeight: "500",
     lineHeight: 21,
   },
   listContent: {
     marginVertical: 10,
     flex: 1,
-  },
-  header: {
-    color: '#13231B',
-    fontSize: 15,
-    lineHeight: 20,
-    fontWeight: 500,
   },
 });

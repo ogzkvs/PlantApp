@@ -9,7 +9,7 @@ const ProfileScreen: React.FC = () => {
   const dispatch = useAppDispatch();
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Profile Screen</Text>
+      <Text>Profile Screen</Text>
       <Button
         title="Reset"
         onPress={() => dispatch(resetPageStatusToOnboarding())}

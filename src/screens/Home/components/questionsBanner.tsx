@@ -1,14 +1,14 @@
 import React from 'react';
-import { View, ActivityIndicator, StyleSheet } from 'react-native';
-
+import { View, StyleSheet } from 'react-native';
 import { useAppSelector } from '../../../store/hooks';
 import Slider from '../../../components/slider/slider';
+import Loading from '../../../components/loading/loading';
 
 const QuestionsBanner: React.FC = () => {
   const { data, loading, error } = useAppSelector(state => state.questions);
 
   if (loading) {
-    return <ActivityIndicator size="small" color="#28AF6E" />;
+    return <Loading />;
   }
 
   if (error) {
