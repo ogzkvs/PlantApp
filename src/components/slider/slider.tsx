@@ -1,6 +1,7 @@
-import { View, FlatList, Text, TouchableOpacity, Linking } from 'react-native';
+import { View, FlatList, TouchableOpacity, Linking } from 'react-native';
 import { ImageBackground } from 'react-native';
 import styles from './styles/slider';
+import CustomText from '../../components/customText';
 
 interface SliderItem {
   id: number;
@@ -25,7 +26,7 @@ const Slider = (props: SliderProps) => {
         imageStyle={{ borderRadius: 12 }}
       >
         <View style={styles.textContainer}>
-          <Text style={styles.title}>{item?.title}</Text>
+          <CustomText style={styles.title}>{item?.title}</CustomText>
         </View>
       </ImageBackground>
     );
@@ -45,7 +46,11 @@ const Slider = (props: SliderProps) => {
 
   const renderTitle = () => {
     if (props.title) {
-      return <Text style={styles.header}>{props.title}</Text>;
+      return (
+        <CustomText fontFamily="Rubik-Medium" style={styles.header}>
+          {props.title}
+        </CustomText>
+      );
     }
     return null;
   };

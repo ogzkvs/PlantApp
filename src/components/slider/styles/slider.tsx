@@ -41,6 +41,7 @@ export default StyleSheet.create<Styles>({
   title: {
     color: '#fff',
     fontSize: 16,
+    fontWeight: '500',
   },
   listContent: {
     marginVertical: 10,
@@ -49,6 +50,6 @@ export default StyleSheet.create<Styles>({
     color: '#13231B',
     fontSize: 15,
     lineHeight: 20,
-    fontWeight: 500,
+    fontWeight: '500',
   },
 });

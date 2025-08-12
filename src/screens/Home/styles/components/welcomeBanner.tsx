@@ -19,6 +19,7 @@ export default StyleSheet.create<Styles>({
     fontSize: 24,
     fontWeight: '500',
     color: '#13231B',
+    lineHeight: 30,
     marginTop: 4,
   },
 });

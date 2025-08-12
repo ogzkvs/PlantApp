@@ -9,7 +9,7 @@ interface Styles {
   buttonText: TextStyle;
   policyContainer: ViewStyle;
   policy: TextStyle;
-  row: ViewStyle;
+  textContainer: ViewStyle;
 }
 
 export default StyleSheet.create<Styles>({
@@ -19,8 +19,8 @@ export default StyleSheet.create<Styles>({
     alignItems: 'center',
     padding: 20,
   },
-  row: {
-    flexDirection: 'row',
+  textContainer: {
+    paddingLeft: 5,
   },
   title: {
     fontSize: 28,
@@ -32,12 +32,11 @@ export default StyleSheet.create<Styles>({
     fontWeight: 'bold',
     marginBottom: 20,
     color: '#13231B',
-    marginLeft: 5,
   },
   description: {
     fontSize: 16,
     fontWeight: '400',
-    color: '#13231BB2',
+    color: 'rgba(19, 35, 27, 0.7)',
   },
   button: {
     backgroundColor: '#28AF6E',
@@ -46,7 +45,7 @@ export default StyleSheet.create<Styles>({
     width: '100%',
     alignItems: 'center',
   },
-  buttonText: { color: '#fff', fontSize: 15, fontWeight: '700' },
+  buttonText: { color: '#fff', fontSize: 15 },
   policyContainer: {
     paddingHorizontal: 25,
     paddingVertical: 25,

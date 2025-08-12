@@ -1,3 +1,4 @@
+// src/components/CustomText.tsx
 import React from 'react';
 import { Text, TextProps, TextStyle } from 'react-native';
 
@@ -9,7 +10,7 @@ interface CustomTextProps extends TextProps {
 const CustomText: React.FC<CustomTextProps> = ({
   style,
   children,
-  fontFamily = 'Rubik',
+  fontFamily = 'Rubik-Regular',
   ...props
 }) => {
   return (

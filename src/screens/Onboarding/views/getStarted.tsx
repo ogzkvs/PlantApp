@@ -1,22 +1,23 @@
 import React from 'react';
-import { View, Text, TouchableOpacity, Image } from 'react-native';
+import { View, TouchableOpacity, Image } from 'react-native';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { RootStackParamList } from '../../../navigation/Stacks/main';
 import styles from '../styles/getStarted';
+import CustomText from '../../../components/customText';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'GetStarted'>;
 
 const GetStarted: React.FC<Props> = ({ navigation }) => {
   return (
     <View style={styles.container}>
-      <View style={styles.row}>
-        <Text style={styles.title}>Welcome to</Text>
-        <Text style={styles.titleBold}>PlantApp</Text>
+      <View style={styles.textContainer}>
+        <CustomText style={styles.title}>
+          Welcome to <CustomText style={styles.titleBold}>PlantApp</CustomText>
+        </CustomText>
+        <CustomText style={styles.description}>
+          Identify more than 3000+ plants and 88% accuracy.
+        </CustomText>
       </View>
-
-      <Text style={styles.description}>
-        Identify more than 3000+ plants and 88% accuracy.
-      </Text>
       <Image
         source={require('../../../assets/images/started.png')}
         resizeMode="contain"
@@ -25,13 +26,17 @@ const GetStarted: React.FC<Props> = ({ navigation }) => {
         style={styles.button}
         onPress={() => navigation.navigate('Onboarding')}
       >
-        <Text style={styles.buttonText}>Get Started</Text>
+        <CustomText fontFamily="Sf-Pro-Bold" style={styles.buttonText}>
+          Get Started
+        </CustomText>
       </TouchableOpacity>
       <View style={styles.policyContainer}>
-        <Text style={styles.policy}>
-          By tapping next, you are agreeing to PlantID Terms of Use & Privacy
-          Policy.
-        </Text>
+        <CustomText style={styles.policy}>
+          By tapping next, you are agreeing to PlantID{' '}
+          <CustomText style={{ textDecorationLine: 'underline' }}>
+            Terms of Use & Privacy Policy.
+          </CustomText>
+        </CustomText>
       </View>
     </View>
   );

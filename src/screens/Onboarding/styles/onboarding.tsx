@@ -14,8 +14,7 @@ interface Styles {
   image: ImageStyle;
   title: TextStyle;
   description: TextStyle;
-  dot: ViewStyle;
-  activeDot: ViewStyle;
+  dotContainer: ViewStyle;
   button: ViewStyle;
   buttonText: TextStyle;
 }
@@ -45,19 +44,11 @@ export default StyleSheet.create<Styles>({
     marginTop: 10,
     lineHeight: 22,
   },
-  dot: {
-     backgroundColor: 'rgba(19, 35, 27, 0.25)',
-    width: 6,
-    height: 6,
-    borderRadius: 3,
-    marginHorizontal: 3,
-  },
-  activeDot: {
-    backgroundColor: '#13231B',
-    width: 10,
-    height: 10,
-    borderRadius: 5,
-    marginHorizontal: 3,
+  dotContainer: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    paddingBottom: 35,
   },
   button: {
     backgroundColor: '#28AF6E',
@@ -70,5 +61,5 @@ export default StyleSheet.create<Styles>({
     width: '90%',
     alignSelf: 'center',
   },
-  buttonText: { color: '#fff', fontSize: 18, fontWeight: 'bold' },
+  buttonText: { color: '#fff', fontSize: 15, lineHeight: 24 },
 });

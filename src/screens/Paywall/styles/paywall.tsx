@@ -15,6 +15,8 @@ interface Styles {
   plantImage: ViewStyle;
   title: TextStyle;
   subTitle: TextStyle;
+  plantAppText: TextStyle;
+  premiumText: TextStyle;
   featuresRow: ViewStyle;
   featureBox: ViewStyle;
   featureIconWrapper: ViewStyle;
@@ -62,9 +64,13 @@ export default StyleSheet.create<Styles>({
     justifyContent: 'flex-end',
   },
   title: {
-    fontSize: 30,
     color: '#fff',
-    fontWeight: 'normal',
+  },
+  plantAppText: {
+    fontSize: 30,
+  },
+  premiumText: {
+    fontSize: 24,
   },
   subTitle: {
     fontSize: 17,

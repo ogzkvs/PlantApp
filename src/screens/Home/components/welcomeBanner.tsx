@@ -1,12 +1,13 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import { View } from 'react-native';
 import styles from '../styles/components/welcomeBanner';
+import CustomText from '../../../components/customText';
 
 const WelcomeBanner: React.FC = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.greeting}>Hi, plant lover!</Text>
-      <Text style={styles.subGreeting}>Good Afternoon! ⛅</Text>
+      <CustomText style={styles.greeting}>Hi, plant lover!</CustomText>
+      <CustomText style={styles.subGreeting}>Good Afternoon! ⛅</CustomText>
     </View>
   );
 };

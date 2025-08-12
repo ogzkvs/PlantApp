@@ -1,14 +1,14 @@
 import React from 'react';
 import {
   View,
-  Text,
   ImageBackground,
   FlatList,
   ActivityIndicator,
 } from 'react-native';
 import styles from '../styles/components/categoriesBanner';
 import { useAppSelector } from '../../../store/hooks';
-import { CategoryType, Meta } from '../../../types/categories';
+import { CategoryType } from '../../../types/categories';
+import CustomText from '../../../components/customText';
 
 const CategoriesBanner: React.FC = () => {
   const { data, loading, error } = useAppSelector(state => state.categories);
@@ -38,7 +38,9 @@ const CategoriesBanner: React.FC = () => {
           }}
         >
           <View style={styles.textContainer}>
-            <Text style={styles.title}>{item?.title}</Text>
+            <CustomText fontFamily="Rubik-Medium" style={styles.title}>
+              {item?.title}
+            </CustomText>
           </View>
         </ImageBackground>
       </View>

@@ -35,7 +35,7 @@ export default StyleSheet.create<Styles>({
   title: {
     color: '#13231B',
     fontSize: 16,
-    fontWeight: 500,
+    fontWeight: "500",
     lineHeight: 21,
   },
   listContent: {

@@ -1,4 +1,4 @@
-import {StyleSheet, ViewStyle, TextStyle, ImageStyle} from 'react-native';
+import { StyleSheet, ViewStyle, TextStyle, ImageStyle } from 'react-native';
 
 interface Styles {
   banner: ViewStyle;
@@ -30,13 +30,11 @@ export default StyleSheet.create<Styles>({
     flexDirection: 'row',
   },
   text: {
-    color: '#E5C990',
-    fontWeight: '700',
+    color: 'rgba(229, 201, 144, 1)',
     fontSize: 16,
   },
   upgradeText: {
     color: '#FFDE9C',
-    fontWeight: '400',
     fontSize: 13,
   },
   textContainer: {
@@ -51,12 +49,12 @@ export default StyleSheet.create<Styles>({
   },
   badge: {
     position: 'absolute',
-    top: -5,
-    right: -10,
+    top: -2,
+    right: 0,
     backgroundColor: '#E82C13E5',
-    borderRadius: 10,
-    minWidth: 20,
-    height: 20,
+    borderRadius: 9,
+    width: 18,
+    height: 18,
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -65,5 +63,5 @@ export default StyleSheet.create<Styles>({
     fontWeight: 'bold',
     fontSize: 12,
   },
-  messageContainer: {width: 40, height: 40, position: 'relative'},
+  messageContainer: { width: 40, height: 40, position: 'relative' },
 });

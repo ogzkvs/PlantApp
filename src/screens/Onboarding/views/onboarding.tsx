@@ -1,7 +1,6 @@
 import React, { useRef, useState } from 'react';
 import {
   View,
-  Text,
   Image,
   ImageBackground,
   TouchableOpacity,
@@ -13,7 +12,7 @@ import { RootStackParamList } from '../../../navigation/Stacks/main';
 import { useAppDispatch } from '../../../store/hooks';
 import { setPageStatusToMain } from '../../../store/slices/settingsSlice';
 import styles from '../styles/onboarding';
-import Paywall from '../../Paywall';
+import CustomText from '../../../components/customText';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Onboarding'> & {};
 
@@ -90,7 +89,12 @@ const OnboardingScreen: React.FC<Props> = ({ navigation }) => {
                     style={styles.button}
                     onPress={handleButtonPress}
                   >
-                    <Text style={styles.buttonText}>Continue</Text>
+                    <CustomText
+                      fontFamily="Sf-Pro-Bold"
+                      style={styles.buttonText}
+                    >
+                      Continue
+                    </CustomText>
                   </TouchableOpacity>
                 </ImageBackground>
               </>
@@ -98,6 +102,21 @@ const OnboardingScreen: React.FC<Props> = ({ navigation }) => {
           </View>
         )}
       />
+      <View style={styles.dotContainer}>
+        {slides.map((_, index) => (
+          <View
+            key={index.toString()}
+            style={{
+              width: index === activeIndex ? 10 : 6,
+              height: index === activeIndex ? 10 : 6,
+              borderRadius: index === activeIndex ? 5 : 3,
+              backgroundColor:
+                index === activeIndex ? '#13231B' : 'rgba(19, 35, 27, 0.25)',
+              marginHorizontal: 6,
+            }}
+          />
+        ))}
+      </View>
     </View>
   );
 };

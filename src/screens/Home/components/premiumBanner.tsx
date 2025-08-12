@@ -1,7 +1,8 @@
 import React from 'react';
-import { View, Text, Image } from 'react-native';
+import { View, Image } from 'react-native';
 import styles from '../styles/components/premiumBanner';
 import Icon from '../../../components/icons';
+import CustomText from '../../../components/customText';
 
 const PremiumBanner: React.FC = () => {
   return (
@@ -14,12 +15,16 @@ const PremiumBanner: React.FC = () => {
               style={styles.icon}
             />
             <View style={styles.badge}>
-              <Text style={styles.badgeText}>1</Text>
+              <CustomText style={styles.badgeText}>1</CustomText>
             </View>
           </View>
           <View style={styles.textContainer}>
-            <Text style={styles.text}>Free Premium Available</Text>
-            <Text style={styles.upgradeText}>Tap to upgrade your account!</Text>
+            <CustomText fontFamily="Sf-Pro-Bold" style={styles.text}>
+              Free Premium Available
+            </CustomText>
+            <CustomText fontFamily="Sf-Pro-Regular" style={styles.upgradeText}>
+              Tap to upgrade your account!
+            </CustomText>
           </View>
           <Icon name="arrow" size={24} color="#D0B070" />
         </View>

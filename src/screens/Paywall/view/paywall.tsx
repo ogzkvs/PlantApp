@@ -1,17 +1,15 @@
 import React, { useState } from 'react';
 import {
   View,
-  Text,
   TouchableOpacity,
-  Image,
   ScrollView,
-  Dimensions,
   Pressable,
   ImageBackground,
 } from 'react-native';
 
 import styles from '../styles/paywall';
 import Icon from '../../../components/icons';
+import CustomText from '../../../components/customText';
 
 const features = [
   {
@@ -75,10 +73,20 @@ const PaywallScreen: React.FC<{ navigation: any }> = ({ navigation }) => {
         >
           <View style={styles.plantContainer}>
             <View style={styles.titleWrapper}>
-              <Text style={styles.title}>
-                <Text style={{ fontWeight: 'bold' }}>PlantApp </Text>Premium
-              </Text>
-              <Text style={styles.subTitle}>Access All Features</Text>
+              <CustomText style={styles.title}>
+                <CustomText
+                  fontFamily="Visby-Extra-Bold"
+                  style={styles.plantAppText}
+                >
+                  PlantApp{' '}
+                </CustomText>
+                <CustomText fontFamily="Rubik-Bold" style={styles.premiumText}>
+                  Premium
+                </CustomText>
+              </CustomText>
+              <CustomText style={styles.subTitle}>
+                Access All Features
+              </CustomText>
             </View>
             <ScrollView
               horizontal
@@ -91,8 +99,12 @@ const PaywallScreen: React.FC<{ navigation: any }> = ({ navigation }) => {
                     <View style={styles.featureIconWrapper}>
                       <Icon name={item.icon} size={18} color="#fff" />
                     </View>
-                    <Text style={styles.featureTitle}>{item.title}</Text>
-                    <Text style={styles.featureSub}>{item.sub}</Text>
+                    <CustomText style={styles.featureTitle}>
+                      {item.title}
+                    </CustomText>
+                    <CustomText style={styles.featureSub}>
+                      {item.sub}
+                    </CustomText>
                   </View>
                 </View>
               ))}
@@ -120,12 +132,14 @@ const PaywallScreen: React.FC<{ navigation: any }> = ({ navigation }) => {
               {selectedPlan === plan.id && <View style={styles.selectedRb} />}
             </View>
             <View>
-              <Text style={styles.planTitle}>{plan.title}</Text>
-              <Text style={styles.planSub}>{plan.sub}</Text>
+              <CustomText style={styles.planTitle}>{plan.title}</CustomText>
+              <CustomText style={styles.planSub}>{plan.sub}</CustomText>
             </View>
             {plan.badge && (
               <View style={styles.saveBadge}>
-                <Text style={styles.saveBadgeText}>{plan.badge}</Text>
+                <CustomText style={styles.saveBadgeText}>
+                  {plan.badge}
+                </CustomText>
               </View>
             )}
           </Pressable>
@@ -133,20 +147,22 @@ const PaywallScreen: React.FC<{ navigation: any }> = ({ navigation }) => {
       </View>
 
       <TouchableOpacity style={styles.subscribeButton}>
-        <Text style={styles.subscribeButtonText}>Try free for 3 days</Text>
+        <CustomText style={styles.subscribeButtonText}>
+          Try free for 3 days
+        </CustomText>
       </TouchableOpacity>
 
-      <Text style={styles.bottomText}>
+      <CustomText style={styles.bottomText}>
         After the 3-day free trial period you'll be charged $274.99 per year
         unless you cancel before the trial expires. Yearly Subscription is
         Auto-Renewable
-      </Text>
+      </CustomText>
 
       <View style={styles.termsRow}>
         {termsLinks.map(item => (
-          <Text key={item} style={styles.termsText}>
+          <CustomText key={item} style={styles.termsText}>
             {item}
-          </Text>
+          </CustomText>
         ))}
       </View>
     </ScrollView>
